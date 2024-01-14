@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #bdbdbd; /* Fondo general del body (modo claro) */
+    transition: background-color 0.5s;
+}
+
+.game-container {
+    text-align: center;
+    color: aliceblue;
+    background-color: #868686; /* Fondo de la sección de juego (modo claro) */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #2e2e2e; 
+}
+
+img.dark-mode {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+#result.dark-mode {
+    color: #fff; 
+}
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#dark-mode-toggle {
+    margin-top:3%;
+    padding: 10px;
+    background-color: #303030; /* Color de fondo en modo claro */
+    color: #fff; /* Color de texto en modo claro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #000000; /* Cambiar color de fondo al pasar el mouse en modo claro */
+}
+
+#dark-mode-toggle.dark-mode {
+    background-color: #acacac; /* Color de fondo en modo oscuro */
+    color: #fff; /* Color de texto en modo oscuro */
+}
+
+#dark-mode-toggle.dark-mode:hover {
+    background-color: #ffffff; /* Cambiar color de fondo al pasar el mouse en modo oscuro */
+}
